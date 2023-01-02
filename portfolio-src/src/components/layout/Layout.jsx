@@ -3,7 +3,7 @@ import React from "react";
 
 //component imports
 import SiteHead from "./Head";
-import NavBar from "./navbar/NavBar";
+import NavBar from "./NavBar";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
