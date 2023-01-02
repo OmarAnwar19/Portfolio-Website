@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
 //context imports
 import { ColorModeContext } from "../../utils/MUIProvider";
@@ -8,8 +8,14 @@ import { IconButton, useTheme } from "@mui/material";
 import { Brightness4, Brightness7 } from "@mui/icons-material";
 
 const ModeToggle = () => {
-  const colorMode = useContext(ColorModeContext);
+  const { colorMode, setMode } = useContext(ColorModeContext);
   const theme = useTheme();
+
+  useEffect(() => {
+    if (localStorage.getItem("mode")) {
+      setMode(localStorage.getItem("mode"));
+    }
+  }, []);
 
   return (
     <IconButton

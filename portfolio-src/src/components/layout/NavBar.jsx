@@ -1,5 +1,11 @@
-import { Link } from "@mui/material";
+//react imports
 import React from "react";
+
+//component imports
+import ModeToggle from "../atoms/ModeToggle";
+
+//mui imports
+import { Link } from "@mui/material";
 
 const NavBar = () => {
   return (
@@ -20,6 +26,8 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+
+        <ModeToggle />
       </nav>
     </header>
   );
