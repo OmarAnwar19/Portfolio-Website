@@ -1,15 +1,16 @@
 //react imports
-import React from "react";
+import React, { useContext } from "react";
 
 //context imports
 import { ColorModeContext } from "../src/utils/MUIProvider";
 
 //mui imports
-import { IconButton, Paper } from "@mui/material";
+import { IconButton, Paper, useTheme } from "@mui/material";
 import { Brightness4, Brightness7 } from "@mui/icons-material";
 
 const Home = () => {
-  const colorMode = React.useContext(ColorModeContext);
+  const colorMode = useContext(ColorModeContext);
+  const theme = useTheme();
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
