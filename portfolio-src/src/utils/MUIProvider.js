@@ -15,24 +15,44 @@ const MUIProvider = ({ children }) => {
   useEffect(() => {
     if (localStorage.getItem("mode")) {
       setMode(localStorage.getItem("mode"));
+    } else {
+      localStorage.setItem("mode", mode);
     }
   }, []);
 
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
-        localStorage.setItem("mode", mode === "light" ? "dark" : "light");
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+        setMode((prevMode) => {
+          localStorage.setItem("mode", prevMode === "light" ? "dark" : "light");
+          return prevMode === "light" ? "dark" : "light";
+        });
       },
     }),
     []
   );
 
   const theme = createTheme({
+    typography: {
+      fontFamily: `"Poppins", "Helvetica", "Arial", sans-serif`,
+      fontSize: 14,
+      fontWeightLight: 300,
+      fontWeightRegular: 400,
+      fontWeightMedium: 500,
+    },
     palette: {
       mode,
       primary: {
-        main: "#fcba03",
+        main: "#7043db",
+      },
+      secondary: {
+        main: "#c2aff0",
+      },
+      dark: {
+        main: "#451779",
+      },
+      light: {
+        main: "#eeebf2",
       },
     },
   });
