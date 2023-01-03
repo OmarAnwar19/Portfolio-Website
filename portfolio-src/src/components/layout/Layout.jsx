@@ -3,17 +3,15 @@ import React from "react";
 
 //component imports
 import SiteHead from "./Head";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "./header/NavBar";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="">
       <SiteHead />
       <NavBar />
       <main>{children}</main>
-      <Footer />
-    </>
+    </div>
   );
 };
 

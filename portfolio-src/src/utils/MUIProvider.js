@@ -42,18 +42,20 @@ const MUIProvider = ({ children }) => {
     },
     palette: {
       mode,
-      primary: {
-        main: "#7043db",
-      },
-      secondary: {
-        main: "#c2aff0",
-      },
-      dark: {
-        main: "#451779",
-      },
-      light: {
-        main: "#eeebf2",
-      },
+      ...(mode === "light"
+        ? {
+            primary: {
+              main: "#7043db",
+              light: "#c2aff0",
+              dark: "#6f2da8",
+              contrastText: "#fff",
+            },
+          }
+        : {
+            primary: {
+              main: "rgba(255, 255, 255, 0.08)",
+            },
+          }),
     },
   });
 

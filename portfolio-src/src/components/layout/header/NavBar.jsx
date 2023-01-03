@@ -8,12 +8,7 @@ import Link from "next/link";
 import {
   AppBar,
   Box,
-  Drawer,
   IconButton,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
   Toolbar,
   Typography,
   Button,
@@ -23,9 +18,10 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 //component imports
-import ModeToggle from "../atoms/ModeToggle";
+import ModeToggle from "../../atoms/ModeToggle";
+import DrawerCont from "./DrawerCont";
 
-const NavBar = ({ window }) => {
+const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const navItems = { Portfolio: "/", Blog: "/blog", Resume: "/resume" };
 
@@ -33,36 +29,13 @@ const NavBar = ({ window }) => {
     setMobileOpen((prevState) => !prevState);
   };
 
-  const drawerCont = (
-    <Box onClick={handleDrawerToggle} className="text-center">
-      <List>
-        {Object.entries(navItems).map(([item, route]) => (
-          <ListItem key={`li-${item}`} disablePadding>
-            <Link href={route}>
-              <ListItemButton className="text-center">
-                <ListItemText primary={item} />
-              </ListItemButton>
-            </Link>
-          </ListItem>
-        ))}
-
-        <ListItem>
-          <ModeToggle />
-        </ListItem>
-      </List>
-    </Box>
-  );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
-
   return (
-    <Box className="flex">
-      <AppBar component="nav" position="fixed">
+    <Box id="navbar">
+      <AppBar component="nav" position="fixed" sx={{ height: "10vh" }}>
         <Toolbar
           sx={{
             width: "100%",
-            maxWidth: 1250,
+            maxWidth: 850,
             mx: "auto",
           }}
         >
@@ -96,25 +69,11 @@ const NavBar = ({ window }) => {
       </AppBar>
 
       <Box component="nav">
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          anchor="right"
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: 180,
-            },
-          }}
-        >
-          {drawerCont}
-        </Drawer>
+        <DrawerCont
+          mobileOpen={mobileOpen}
+          handleDrawerToggle={handleDrawerToggle}
+          navItems={navItems}
+        />
       </Box>
     </Box>
   );

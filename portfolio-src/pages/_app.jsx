@@ -1,4 +1,5 @@
 //react imports
+import { Box } from "@mui/material";
 import React from "react";
 
 //component imports
@@ -10,12 +11,10 @@ import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="App">
-      <MUIProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </MUIProvider>
-    </div>
+    <MUIProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </MUIProvider>
   );
 }

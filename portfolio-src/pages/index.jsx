@@ -1,14 +1,29 @@
 //react imports
 import React from "react";
 
+//mui imports
+import { Box } from "@mui/material";
+
+//component imports
+import Hero from "../src/components/portfolio/Hero";
+import Footer from "../src/components/layout/footer/Footer";
+
 const Home = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <div>
-        <h1>Omar Anwar</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-    </div>
+    <>
+      <Box
+        sx={{
+          width: "100%",
+          maxWidth: 850,
+          mx: "auto",
+          height: "100vh",
+          pt: "10vh",
+        }}
+      >
+        <Hero />
+      </Box>
+      <Footer />
+    </>
   );
 };
 
