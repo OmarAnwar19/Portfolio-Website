@@ -15,6 +15,39 @@ import { LaptopMac } from "@mui/icons-material";
 import TLineItem from "./TLineItem";
 
 export default function OppositeContentTimeline() {
+  const items = [
+    {
+      time: "2004",
+      title: "Code",
+      subtitle: "Lorem ipsum dolor sit amet.",
+      icon: <LaptopMac />,
+    },
+    {
+      time: "2004",
+      title: "Code",
+      subtitle: "Lorem ipsum dolor sit amet.",
+      icon: <LaptopMac />,
+    },
+    {
+      time: "2004",
+      title: "Code",
+      subtitle: "Lorem ipsum dolor sit amet.",
+      icon: <LaptopMac />,
+    },
+    {
+      time: "2004",
+      title: "Code",
+      subtitle: "Lorem ipsum dolor sit amet.",
+      icon: <LaptopMac />,
+    },
+    {
+      time: "2004",
+      title: "Code",
+      subtitle: "Lorem ipsum dolor sit amet.",
+      icon: <LaptopMac />,
+    },
+  ];
+
   return (
     <Timeline
       sx={{
@@ -23,40 +56,14 @@ export default function OppositeContentTimeline() {
         },
       }}
     >
-      <TLineItem
-        time={"2004"}
-        title={"Code"}
-        subtitle={"Lorem ipsum dolor sit"}
-        icon={<LaptopMac />}
-      />
-
-      <TLineItem
-        time={"2004"}
-        title={"Code"}
-        subtitle={"Lorem ipsum dolor sit"}
-        icon={<LaptopMac />}
-      />
-
-      <TLineItem
-        time={"2004"}
-        title={"Code"}
-        subtitle={"Lorem ipsum dolor sit"}
-        icon={<LaptopMac />}
-      />
-
-      <TLineItem
-        time={"2004"}
-        title={"Code"}
-        subtitle={"Lorem ipsum dolor sit"}
-        icon={<LaptopMac />}
-      />
-
-      <TLineItem
-        time={"2004"}
-        title={"Code"}
-        subtitle={"Lorem ipsum dolor sit"}
-        icon={<LaptopMac />}
-      />
+      {items.map((item) => (
+        <TLineItem
+          time={item.time}
+          title={item.title}
+          subtitle={item.subtitle}
+          icon={item.icon}
+        />
+      ))}
     </Timeline>
   );
 }
