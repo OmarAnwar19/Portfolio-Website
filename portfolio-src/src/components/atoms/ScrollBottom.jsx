@@ -11,7 +11,7 @@ const ScrollBottom = ({ anchorId }) => {
 
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      anchorId
+      `#${anchorId}`
     );
 
     if (anchor) {
@@ -22,7 +22,7 @@ const ScrollBottom = ({ anchorId }) => {
   };
 
   return (
-    <Box onClick={handleClick} role="presentation">
+    <Box onClick={handleClick} role="presentation" sx={{ py: 2 }}>
       <Fab size="small" color={theme.palette.mode === "light" && "primary"}>
         <KeyboardArrowDown />
       </Fab>

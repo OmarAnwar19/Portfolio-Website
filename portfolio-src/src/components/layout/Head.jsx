@@ -23,7 +23,7 @@ const SiteHead = () => {
       <title>
         Omar Anwar {typeof window === "undefined" ? "" : `- ${pageName}`}
       </title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/assets/img/headshot.png" />
     </Head>
   );
 };

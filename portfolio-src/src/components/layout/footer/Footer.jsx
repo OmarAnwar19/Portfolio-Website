@@ -13,8 +13,10 @@ import {
   ListItem,
   Stack,
   Button,
-  Paper,
 } from "@mui/material";
+
+//icon imports
+import MailIcon from "@mui/icons-material/Mail";
 
 //component imports
 import ScrollTop from "../../atoms/ScrollTop";
@@ -38,16 +40,19 @@ const Footer = () => {
         <Stack
           direction="row"
           sx={{
+            display: { sm: "flex", xs: "none" },
             justifyContent: "space-between",
-            py: 2,
-            display: { xs: "none", sm: "flex" },
           }}
         >
-          <Box>
-            <Typography>Say Hello!</Typography>
+          <Box sx={{ py: 3 }}>
             <Link href="mailto:omaranwar04@outlook.com">
-              <Typography sx={{ fontStyle: "italic" }}>
-                omaranwar04@outlook.com
+              <Typography
+                sx={{
+                  fontStyle: "italic",
+                  "&:hover": { textDecoration: "underline" },
+                }}
+              >
+                <MailIcon /> omaranwar04@outlook.com
               </Typography>
             </Link>
           </Box>

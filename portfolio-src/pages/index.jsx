@@ -6,24 +6,20 @@ import { Box } from "@mui/material";
 
 //component imports
 import Hero from "../src/components/portfolio/Hero";
-import Footer from "../src/components/layout/footer/Footer";
+import AboutMe from "../src/components/portfolio/AboutMe";
 
 const Home = () => {
   return (
-    <>
-      <Box
-        sx={{
-          width: "100%",
-          maxWidth: 850,
-          mx: "auto",
-          height: "100vh",
-          pt: "10vh",
-        }}
-      >
-        <Hero />
-      </Box>
-      <Footer />
-    </>
+    <Box
+      sx={{
+        width: "100%",
+        maxWidth: 850,
+        mx: "auto",
+      }}
+    >
+      <Hero />
+      <AboutMe />
+    </Box>
   );
 };
 

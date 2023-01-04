@@ -8,11 +8,11 @@ import Link from "next/link";
 import { IconButton, List, ListItem, Stack } from "@mui/material";
 
 //icon imports
-import { GitHub, LinkedIn, Article } from "@mui/icons-material";
+import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 
 const SocialButtons = () => {
   return (
-    <List component={Stack} direction="row" sx={{ gap: 2 }}>
+    <List component={Stack} direction="row" sx={{ gap: 1 }}>
       <ListItem key="i-github">
         <Link href="https://github.com/OmarAnwar19">
           <IconButton color="inherit">
@@ -29,10 +29,10 @@ const SocialButtons = () => {
         </Link>
       </ListItem>
 
-      <ListItem key="i-resume">
-        <Link href="https://docs.google.com/document/d/1C2XvpPxBAAoftkQD_oZ6eowBRhJKrlRUX4psGpl_Kos/edit?usp=sharing">
+      <ListItem key="i-instagram">
+        <Link href="https://www.instagram.com/oanwar19/">
           <IconButton color="inherit">
-            <Article />
+            <Instagram />
           </IconButton>
         </Link>
       </ListItem>
