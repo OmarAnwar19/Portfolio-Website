@@ -7,8 +7,8 @@ import { Box, Typography, useTheme } from "@mui/material";
 //component imports
 import SocialButtons from "../atoms/SocialButtons";
 import ScrollBottom from "../atoms/ScrollBottom";
-import TypingText from "./TypingText";
-import Section from "./Section";
+import TypingText from "./atoms/TypingText";
+import Section from "./atoms/Section";
 
 const Hero = () => {
   const theme = useTheme();
@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <Section secId={"hero"}>
       <Typography
-        color={theme.palette.mode === "light" && "primary"}
+        color="secondary"
         sx={{ fontWeight: "bold", pb: 2, fontSize: { sm: 92, xs: 62 } }}
       >
         Hi, I'm Omar Anwar 👋

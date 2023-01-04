@@ -6,7 +6,7 @@ import { Box, Fab, useTheme } from "@mui/material";
 //icon imports
 import { KeyboardArrowDown } from "@mui/icons-material";
 
-const ScrollBottom = ({ anchorId }) => {
+const ScrollBottom = ({ anchorId, bg }) => {
   const theme = useTheme();
 
   const handleClick = (event) => {
@@ -23,7 +23,7 @@ const ScrollBottom = ({ anchorId }) => {
 
   return (
     <Box onClick={handleClick} role="presentation" sx={{ py: 2 }}>
-      <Fab size="small" color={theme.palette.mode === "light" && "primary"}>
+      <Fab size="small" color={bg ? "#fff" : "secondary"}>
         <KeyboardArrowDown />
       </Fab>
     </Box>

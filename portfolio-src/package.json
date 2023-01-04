@@ -9,10 +9,12 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
+    "@mui/lab": "^5.0.0-alpha.114",
     "@mui/material": "^5.11.2",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-material-ui-carousel": "^3.4.2",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
