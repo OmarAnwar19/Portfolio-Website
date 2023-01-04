@@ -19,9 +19,9 @@ import ScrollBottom from "../atoms/ScrollBottom";
 const AboutMe = () => {
   const theme = useTheme();
   const skills = [
-    ["Skill", "Skill", "Skill", "Skill", "Skill"],
-    ["Skill", "Skill", "Skill", "Skill", "Skill"],
-    ["Skill", "Skill", "Skill", "Skill", "Skill"],
+    ["Skill", "Skill", "Skill"],
+    ["Skill", "Skill", "Skill"],
+    ["Skill", "Skill", "Skill"],
   ];
 
   return (
@@ -31,12 +31,19 @@ const AboutMe = () => {
         sx={{
           display: "flex",
           borderRadius: 2,
-          height: "75%",
+          height: "100%",
           mt: 5,
           mx: "auto",
         }}
       >
-        <CardContent sx={{ maxWidth: { sm: "50%", xs: "100%" } }}>
+        <CardContent
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            maxWidth: { sm: "50%", xs: "100%" },
+          }}
+        >
           <Typography
             color={theme.palette.mode === "light" && "primary"}
             sx={{ fontWeight: "bold", pb: 2, fontSize: { sm: 46, xs: 32 } }}
@@ -76,6 +83,9 @@ const AboutMe = () => {
                 </List>
               ))}
             </Stack>
+            <Typography sx={{ fontStyle: "italic" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </Typography>
           </Box>
         </CardContent>
         <CardMedia

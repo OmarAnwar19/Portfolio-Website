@@ -16,7 +16,6 @@ const Section = ({ children, secId }) => {
         maxHeight: "100%",
         height: "100vh",
         pt: "10vh",
-        py: 5,
       }}
     >
       {children}
