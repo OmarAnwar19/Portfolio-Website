@@ -1,5 +1,8 @@
 //react imports
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+
+//node imports
+import emailjs from "@emailjs/browser";
 
 //mui imports
 import { Box, Button, TextField } from "@mui/material";
@@ -9,25 +12,34 @@ import Toast from "./Toast";
 
 const ContactForm = () => {
   const [open, setOpen] = useState(false);
-  const [submit, setSubmit] = useState(false);
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let email = e.target.email.value;
-    let subject = e.target.subject.value;
-    let message = e.target.message.value;
-
-    e.target.email.value = "";
-    e.target.subject.value = "";
-    e.target.message.value = "";
-
-    setSubmit(true);
-    setOpen(true);
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
+      )
+      .then(
+        (res) => {
+          e.target.user_name.value = "";
+          e.target.user_email.value = "";
+          e.target.message.value = "";
+          setOpen(true);
+        },
+        (err) => {
+          console.log(err.text);
+        }
+      );
   };
 
   return (
     <Box
+      ref={form}
       component="form"
       sx={{
         "& .MuiTextField-root": { m: 1 },
@@ -44,11 +56,9 @@ const ContactForm = () => {
               color: "black.main",
             },
           }}
-          name="email"
-          type="email"
-          placeholder="Email"
+          name="user_name"
+          placeholder="Name"
           fullWidth
-          required
         />
         <TextField
           sx={{
@@ -58,9 +68,11 @@ const ContactForm = () => {
               color: "black.main",
             },
           }}
-          name="subject"
-          placeholder="Subject"
+          name="user_email"
+          type="email"
+          placeholder="Email"
           fullWidth
+          required
         />
         <TextField
           sx={{
@@ -84,10 +96,10 @@ const ContactForm = () => {
         variant="contained"
         sx={{ width: "100%", m: 1, bgcolor: "white.main", color: "black.main" }}
       >
-        Submit
+        Send
       </Button>
 
-      {submit && <Toast open={open} setOpen={setOpen} />}
+      <Toast open={open} setOpen={setOpen} />
     </Box>
   );
 };
