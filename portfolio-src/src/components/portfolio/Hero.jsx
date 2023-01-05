@@ -15,40 +15,42 @@ const Hero = () => {
 
   return (
     <Section secId={"hero"}>
-      <Typography
-        color="secondary"
-        sx={{ fontWeight: "bold", pb: 2, fontSize: { sm: 92, xs: 62 } }}
-      >
-        Hi, I'm Omar Anwar 👋
-      </Typography>
-
-      <TypingText />
-
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          alignItems: "center",
-          py: 2,
-        }}
-      >
+      <Box sx={{ pt: "5vh" }}>
         <Typography
-          sx={{
-            fontStyle: "italic",
-            maxWidth: 450,
-            display: { sm: "block", xs: "none" },
-          }}
+          color="secondary"
+          sx={{ fontWeight: "bold", pb: 2, fontSize: { sm: 92, xs: 62 } }}
         >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
-          explicabo veniam laboriosam repudiandae tempore et quasi!
+          Hi, I'm Omar Anwar 👋
         </Typography>
 
-        <Box maxWidth={250}>
-          <SocialButtons />
-        </Box>
+        <TypingText />
 
-        <ScrollBottom anchorId={"about-me"} />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+            py: 2,
+          }}
+        >
+          <Typography
+            sx={{
+              fontStyle: "italic",
+              maxWidth: 450,
+              display: { sm: "block", xs: "none" },
+            }}
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+            explicabo veniam laboriosam repudiandae tempore et quasi!
+          </Typography>
+
+          <Box maxWidth={250}>
+            <SocialButtons />
+          </Box>
+
+          <ScrollBottom anchorId={"about-me"} />
+        </Box>
       </Box>
     </Section>
   );

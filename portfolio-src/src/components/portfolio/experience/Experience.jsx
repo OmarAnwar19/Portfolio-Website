@@ -21,6 +21,7 @@ const Experience = () => {
           flexDirection: "column",
           justifyContent: "center",
           height: "70%",
+          pt: "5vh",
         }}
       >
         <Typography

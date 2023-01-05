@@ -1,14 +1,12 @@
 import React from "react";
 
 //mui imports
-import { Box, Fab, useTheme } from "@mui/material";
+import { Box, Fab } from "@mui/material";
 
 //icon imports
 import { KeyboardArrowDown } from "@mui/icons-material";
 
 const ScrollBottom = ({ anchorId, bg }) => {
-  const theme = useTheme();
-
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
       `#${anchorId}`

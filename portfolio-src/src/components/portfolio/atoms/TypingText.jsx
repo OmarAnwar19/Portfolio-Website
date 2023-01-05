@@ -14,9 +14,11 @@ const TypingText = () => {
         options={{
           strings: [
             "Software Engineer",
-            "Technical Product Manager",
             "Full-Stack Developer",
+            "Technical Product Manager",
             "Tech Enthusiast",
+            "Music Nerd",
+            "Nature Lover",
           ],
           autoStart: true,
           loop: true,

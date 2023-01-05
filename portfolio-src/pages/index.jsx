@@ -9,6 +9,7 @@ import Hero from "../src/components/portfolio/Hero";
 import AboutMe from "../src/components/portfolio/AboutMe";
 import Experience from "../src/components/portfolio/experience/Experience";
 import Projects from "../src/components/portfolio/projects/Projects";
+import Contact from "../src/components/portfolio/contact/Contact";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <AboutMe />
       <Experience />
       <Projects />
+      <Contact />
     </Box>
   );
 };

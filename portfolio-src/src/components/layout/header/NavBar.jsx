@@ -35,7 +35,11 @@ const NavBar = () => {
 
   return (
     <Box id="navbar">
-      <AppBar component="nav" position="fixed" sx={{ py: 1, height: "10vh" }}>
+      <AppBar
+        component="nav"
+        position="fixed"
+        sx={{ py: { lg: 1 }, height: "10vh" }}
+      >
         <Toolbar
           sx={{
             width: "100%",

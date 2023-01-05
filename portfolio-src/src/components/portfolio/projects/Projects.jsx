@@ -2,13 +2,21 @@
 import React from "react";
 
 //mui imports
-import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 
 //component imports
 import Section from "../atoms/Section";
 import ScrollBottom from "../../atoms/ScrollBottom";
 import ProjectCard from "./ProjectCard";
-import { Javascript } from "@mui/icons-material";
+import { Javascript, OpenInNewOutlined } from "@mui/icons-material";
+import Link from "next/link";
 
 const Experience = () => {
   const theme = useTheme();
@@ -107,6 +115,20 @@ const Experience = () => {
             </Grid>
           ))}
         </Box>
+
+        <Button
+          sx={{
+            display: { sm: "none", xs: "block" },
+            mt: 3,
+          }}
+          startIcon={<OpenInNewOutlined />}
+          size="small"
+          color="white"
+          variant="contained"
+        >
+          <Link href="https://github.com/OmarAnwar19">View All Projects</Link>
+        </Button>
+
         <ScrollBottom anchorId={"contact"} bg />
       </Section>
     </Box>

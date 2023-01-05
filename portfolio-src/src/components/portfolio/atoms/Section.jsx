@@ -16,7 +16,7 @@ const Section = ({ children, secId }) => {
         flexDirection: "column",
         maxHeight: "100%",
         height: "100vh",
-        pt: "10vh",
+        pt: "5vh",
         width: "100%",
         maxWidth: 850,
         mx: "auto",

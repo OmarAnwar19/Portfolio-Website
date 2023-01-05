@@ -5,15 +5,7 @@ import React from "react";
 import Link from "next/link";
 
 //mui imports
-import {
-  Box,
-  Divider,
-  List,
-  Typography,
-  ListItem,
-  Stack,
-  Button,
-} from "@mui/material";
+import { Box, Divider, List, Typography, Stack, Button } from "@mui/material";
 
 //icon imports
 import MailIcon from "@mui/icons-material/Mail";
