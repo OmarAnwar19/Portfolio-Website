@@ -101,7 +101,7 @@ const AboutMe = () => {
             alt="Live from space album cover"
           />
         </Card>
-        <ScrollBottom anchorId={"timeline"} bg />
+        <ScrollBottom anchorId={"experience"} bg />
       </Section>
     </Paper>
   );

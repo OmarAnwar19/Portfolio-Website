@@ -41,11 +41,14 @@ const DrawerCont = ({ window, mobileOpen, navItems, handleDrawerToggle }) => {
     >
       <Box onClick={handleDrawerToggle} className="text-center">
         <List>
-          {Object.entries(navItems).map(([item, route]) => (
-            <ListItem key={`li-${item}`} disablePadding>
-              <Link href={route}>
-                <ListItemButton className="text-center">
-                  <ListItemText primary={item} />
+          {navItems.map((item) => (
+            <ListItem key={item.slug} disablePadding>
+              <Link href={item.path}>
+                <ListItemButton
+                  className="text-center"
+                  disabled={item.disabled}
+                >
+                  <ListItemText primary={item.slug} />
                 </ListItemButton>
               </Link>
             </ListItem>

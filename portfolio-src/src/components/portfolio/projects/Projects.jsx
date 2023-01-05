@@ -18,7 +18,7 @@ import ProjectCard from "./ProjectCard";
 import { Javascript, OpenInNewOutlined } from "@mui/icons-material";
 import Link from "next/link";
 
-const Experience = () => {
+const Projects = () => {
   const theme = useTheme();
 
   const projects = [
@@ -135,4 +135,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Projects;

@@ -10,6 +10,8 @@ import AboutMe from "../src/components/portfolio/AboutMe";
 import Experience from "../src/components/portfolio/experience/Experience";
 import Projects from "../src/components/portfolio/projects/Projects";
 import Contact from "../src/components/portfolio/contact/Contact";
+import SideNav from "../src/components/portfolio/atoms/SideNav";
+import { useRef } from "react";
 
 const Home = () => {
   return (
@@ -20,6 +22,7 @@ const Home = () => {
       }}
     >
       <Hero />
+      <SideNav />
       <AboutMe />
       <Experience />
       <Projects />

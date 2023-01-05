@@ -14,7 +14,7 @@ const Experience = () => {
   const theme = useTheme();
 
   return (
-    <Section secId={"timeline"}>
+    <Section secId={"experience"}>
       <Box
         sx={{
           display: "flex",
