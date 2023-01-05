@@ -23,7 +23,11 @@ import DrawerCont from "./DrawerCont";
 
 const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navItems = { Portfolio: "/", Blog: "/blog", Resume: "/resume" };
+  const navItems = [
+    { slug: "Porfolio", path: "/", disabled: false },
+    { slug: "Blog", path: "/blog", disabled: true },
+    { slug: "Resume", path: "/resume", disabled: false },
+  ];
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -31,7 +35,7 @@ const NavBar = () => {
 
   return (
     <Box id="navbar">
-      <AppBar component="nav" position="fixed" sx={{ height: "10vh" }}>
+      <AppBar component="nav" position="fixed" sx={{ py: 1, height: "10vh" }}>
         <Toolbar
           sx={{
             width: "100%",
@@ -48,9 +52,13 @@ const NavBar = () => {
           </Typography>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {Object.entries(navItems).map(([item, route]) => (
-              <Button key={`li-${item}`} sx={{ color: "#fff" }}>
-                <Link href={route}>{item}</Link>
+            {navItems.map((item) => (
+              <Button
+                key={item.slug}
+                sx={{ color: "#fff" }}
+                disabled={item.disabled}
+              >
+                <Link href={item.path}>{item.slug}</Link>
               </Button>
             ))}
             <ModeToggle />

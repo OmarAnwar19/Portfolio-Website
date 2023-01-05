@@ -40,7 +40,9 @@ const CarouselCont = () => {
 
 function Item(props) {
   return (
-    <Paper sx={{ px: 2, border: 1, boxShadow: 5 }}>
+    <Paper
+      sx={{ px: 2, border: 1, boxShadow: 5, borderColor: "secondary.main" }}
+    >
       <Typography variant="h6" sx={{ fontWeight: "bold" }}>
         {props.item.name}
       </Typography>

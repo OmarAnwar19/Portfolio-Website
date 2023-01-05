@@ -20,6 +20,7 @@ const Experience = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
+          height: "70%",
         }}
       >
         <Typography
@@ -44,7 +45,7 @@ const Experience = () => {
             <CarouselCont />
           </Box>
         </Stack>
-        <ScrollBottom anchorId={"#"} />
+        <ScrollBottom anchorId={"projects"} />
       </Box>
     </Section>
   );

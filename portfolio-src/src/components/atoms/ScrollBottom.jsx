@@ -22,7 +22,11 @@ const ScrollBottom = ({ anchorId, bg }) => {
   };
 
   return (
-    <Box onClick={handleClick} role="presentation" sx={{ py: 2 }}>
+    <Box
+      onClick={handleClick}
+      role="presentation"
+      sx={{ py: 2, display: { sm: "block", xs: "none" } }}
+    >
       <Fab size="small" color={bg ? "#fff" : "secondary"}>
         <KeyboardArrowDown />
       </Fab>

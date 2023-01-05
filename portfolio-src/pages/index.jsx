@@ -8,6 +8,7 @@ import { Box } from "@mui/material";
 import Hero from "../src/components/portfolio/Hero";
 import AboutMe from "../src/components/portfolio/AboutMe";
 import Experience from "../src/components/portfolio/experience/Experience";
+import Projects from "../src/components/portfolio/projects/Projects";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Hero />
       <AboutMe />
       <Experience />
+      <Projects />
     </Box>
   );
 };

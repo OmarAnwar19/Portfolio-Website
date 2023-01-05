@@ -11,14 +11,13 @@ import {
   Stack,
   List,
   ListItem,
-  useTheme,
+  Paper,
 } from "@mui/material";
 
 import Section from "./atoms/Section";
 import ScrollBottom from "../atoms/ScrollBottom";
 
 const AboutMe = () => {
-  const theme = useTheme();
   const skills = [
     ["Skill", "Skill", "Skill"],
     ["Skill", "Skill", "Skill"],
@@ -26,14 +25,16 @@ const AboutMe = () => {
   ];
 
   return (
-    <Box sx={{ height: "100%", width: "100%", bgcolor: "primary.main", py: 2 }}>
+    <Paper
+      sx={{ height: "100%", width: "100%", bgcolor: "primary.main", py: 2 }}
+    >
       <Section secId={"about-me"}>
         <Card
           raised
           sx={{
             display: "flex",
             borderRadius: 2,
-            height: "100%",
+            height: "85%",
             mx: "auto",
           }}
         >
@@ -100,9 +101,9 @@ const AboutMe = () => {
             alt="Live from space album cover"
           />
         </Card>
-        <ScrollBottom anchorId={"timeline"} bg={true} />
+        <ScrollBottom anchorId={"timeline"} bg />
       </Section>
-    </Box>
+    </Paper>
   );
 };
 

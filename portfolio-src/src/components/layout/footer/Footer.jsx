@@ -23,7 +23,11 @@ import ScrollTop from "../../atoms/ScrollTop";
 import SocialButtons from "../../atoms/SocialButtons";
 
 const Footer = () => {
-  const navItems = { Portfolio: "/", Blog: "/blog", Resume: "/resume" };
+  const navItems = [
+    { slug: "Porfolio", path: "/", disabled: false },
+    { slug: "Blog", path: "/blog", disabled: true },
+    { slug: "Resume", path: "/resume", disabled: false },
+  ];
 
   return (
     <Box
@@ -51,6 +55,7 @@ const Footer = () => {
                   fontStyle: "italic",
                   "&:hover": { textDecoration: "underline" },
                 }}
+                color="white.main"
               >
                 <MailIcon /> omaranwar04@outlook.com
               </Typography>
@@ -58,12 +63,14 @@ const Footer = () => {
           </Box>
 
           <List component={Stack} direction="row" sx={{ gap: 2 }}>
-            {Object.entries(navItems).map(([item, route]) => (
-              <ListItem key={`li-${item}`} disablePadding>
-                <Button color="inherit">
-                  <Link href={route}>{item}</Link>
-                </Button>
-              </ListItem>
+            {navItems.map((item) => (
+              <Button
+                key={item.slug}
+                sx={{ color: "#fff" }}
+                disabled={item.disabled}
+              >
+                <Link href={item.path}>{item.slug}</Link>
+              </Button>
             ))}
           </List>
         </Stack>
@@ -82,9 +89,11 @@ const Footer = () => {
           sx={{ display: "flex", justifyContent: "space-between" }}
         >
           <Box sx={{ py: 3 }}>
-            <Typography>Copyright - Omar Anwar © 2023</Typography>
+            <Typography color="white.main">
+              Copyright - Omar Anwar © 2023
+            </Typography>
           </Box>
-          <SocialButtons />
+          <SocialButtons color={"white"} />
         </Stack>
       </Box>
     </Box>

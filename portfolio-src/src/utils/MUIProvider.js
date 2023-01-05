@@ -53,6 +53,12 @@ const MUIProvider = ({ children }) => {
             secondary: {
               main: "#7043db",
             },
+            white: {
+              main: "#fff",
+            },
+            black: {
+              main: "#000",
+            },
           }
         : {
             primary: {
@@ -60,6 +66,12 @@ const MUIProvider = ({ children }) => {
             },
             secondary: {
               main: "#fff",
+            },
+            white: {
+              main: "#fff",
+            },
+            black: {
+              main: "#000",
             },
           }),
     },
