@@ -50,7 +50,7 @@ const Hero = () => {
             <SocialButtons />
           </Box>
 
-          <ScrollBottom anchorId={"about-me"} />
+          <ScrollBottom anchorId={"about-me"} color={"secondary"} />
         </Box>
       </Box>
     </Section>

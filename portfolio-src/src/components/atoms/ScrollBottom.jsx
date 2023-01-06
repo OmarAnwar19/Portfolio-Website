@@ -6,7 +6,7 @@ import { Box, Fab } from "@mui/material";
 //icon imports
 import { KeyboardArrowDown } from "@mui/icons-material";
 
-const ScrollBottom = ({ anchorId, bg }) => {
+const ScrollBottom = ({ anchorId, color }) => {
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
       `#${anchorId}`
@@ -25,7 +25,7 @@ const ScrollBottom = ({ anchorId, bg }) => {
       role="presentation"
       sx={{ py: 2, display: { sm: "block", xs: "none" } }}
     >
-      <Fab size="small" color={bg ? "#fff" : "secondary"}>
+      <Fab size="small" color={color}>
         <KeyboardArrowDown />
       </Fab>
     </Box>

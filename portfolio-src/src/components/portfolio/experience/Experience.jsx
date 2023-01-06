@@ -47,7 +47,7 @@ const Experience = () => {
             <CarouselCont />
           </Box>
         </Stack>
-        <ScrollBottom anchorId={"projects"} />
+        <ScrollBottom anchorId={"projects"} color={"secondary"} />
       </Box>
     </Section>
   );

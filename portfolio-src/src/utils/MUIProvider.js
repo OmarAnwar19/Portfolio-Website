@@ -55,6 +55,7 @@ const MUIProvider = ({ children }) => {
             },
             white: {
               main: "#fff",
+              contrastText: "#000",
             },
             black: {
               main: "#000",
@@ -69,6 +70,7 @@ const MUIProvider = ({ children }) => {
             },
             white: {
               main: "#fff",
+              contrastText: "#000",
             },
             black: {
               main: "#000",

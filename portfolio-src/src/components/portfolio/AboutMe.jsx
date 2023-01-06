@@ -103,7 +103,7 @@ const AboutMe = () => {
             alt="Live from space album cover"
           />
         </Card>
-        <ScrollBottom anchorId={"experience"} bg />
+        <ScrollBottom anchorId={"experience"} color={"white.main"} />
       </Section>
     </Paper>
   );

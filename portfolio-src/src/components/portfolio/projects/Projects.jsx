@@ -129,7 +129,7 @@ const Projects = () => {
           <Link href="https://github.com/OmarAnwar19">View All Projects</Link>
         </Button>
 
-        <ScrollBottom anchorId={"contact"} bg />
+        <ScrollBottom anchorId={"contact"} color={"white"} />
       </Section>
     </Box>
   );
