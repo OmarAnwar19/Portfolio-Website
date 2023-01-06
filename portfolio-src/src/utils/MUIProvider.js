@@ -64,9 +64,6 @@ const MUIProvider = ({ children }) => {
             },
           }
         : {
-            primary: {
-              main: "rgba(255, 255, 255, 0.08)",
-            },
             secondary: {
               main: "#fff",
               contrastText: "#000",
