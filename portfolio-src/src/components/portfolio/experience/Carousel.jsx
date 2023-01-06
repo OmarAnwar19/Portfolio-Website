@@ -42,7 +42,7 @@ const CarouselCont = () => {
   ];
 
   return (
-    <Carousel navButtonsAlwaysInvisible swipe>
+    <Carousel swipe>
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}

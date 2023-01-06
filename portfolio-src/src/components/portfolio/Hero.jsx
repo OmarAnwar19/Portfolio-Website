@@ -41,8 +41,9 @@ const Hero = () => {
               display: { sm: "block", xs: "none" },
             }}
           >
-            Highly motivated, software enginner, developer, and TPM adept in
-            front-end and full-stack development using a varied tech stack.
+            Highly motivated, software engineer, developer and TPM adept in
+            full-stack development using a varied tech stack. Computer Science
+            and Business Managment @ Carleton University.
           </Typography>
 
           <Box maxWidth={250}>

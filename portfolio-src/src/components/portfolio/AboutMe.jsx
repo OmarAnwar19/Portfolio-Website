@@ -53,12 +53,12 @@ const AboutMe = () => {
               About Me
             </Typography>
             <Typography>
-              Welcome to my site! I'm a student and software devloper living in
-              Ottawa, Canada; with experience in full-stack development, aswell
-              as Java, Python, and many varied technologies. I also love to
-              learn, and am always open to discovering something new. In my
-              personal life I am a huge music nerd, and love to spend time in
-              nature with family and friends.
+              Welcome to my site! I'm a Computer Science student and software
+              developer; with experience in full-stack development, aswell as
+              Java, Python, and many varied technologies. I also love to learn,
+              and am always open to discovering something new. In my personal
+              life I am a huge music nerd, and love to spend time in nature with
+              family and friends.
             </Typography>
 
             <Box>
