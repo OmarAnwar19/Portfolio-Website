@@ -11,38 +11,38 @@ const CarouselCont = () => {
   const items = [
     {
       name: "2008 (4 years old)",
-      img: "/assets/img/carousel/placeholder1.jpg",
+      img: "/assets/img/carousel/alex.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nesciunt aperiam reprehenderit quod. Est quia ad fuga quod debitis excepturi delectus sequi eum, libero corporis iure, velit quo eos. Ullam.",
+        "My first experience with computers, spending hours on my grandparents old computer, tinkering around with all sorts of things, whether that be websites, or games, or trying to make my own terminal games using batch.",
     },
     {
       name: "2012 (8 years old)",
-      img: "/assets/img/carousel/placeholder2.jpg",
+      img: "/assets/img/carousel/winnipeg.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nesciunt aperiam reprehenderit quod. Est quia ad fuga quod debitis excepturi delectus sequi eum, libero corporis iure, velit quo eos. Ullam.",
+        "Delving deeper into software development, starting with Python, and spending every waking moment trying to make the 'coolest' software and apps which I could. Trying to use computers and harnessing coding in exciting ways!",
     },
     {
       name: "2016 (12 years old)",
-      img: "/assets/img/carousel/placeholder2.jpg",
+      img: "/assets/img/carousel/vancouver.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nesciunt aperiam reprehenderit quod. Est quia ad fuga quod debitis excepturi delectus sequi eum, libero corporis iure, velit quo eos. Ullam.",
+        "A time of development, and growth, where individiuals discover their likes and dislikes; a time where I realized my love for development was not simply a phase, but rather someting which I truly love.",
     },
     {
       name: "2018 (16 years old)",
-      img: "/assets/img/carousel/placeholder2.jpg",
+      img: "/assets/img/carousel/ottawa.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nesciunt aperiam reprehenderit quod. Est quia ad fuga quod debitis excepturi delectus sequi eum, libero corporis iure, velit quo eos. Ullam.",
+        "Exploring all of the different aspects of development, and falling in love with all that it can do. Beggining to explore web development, and backend technologies. Learning new languages and gaining new experiences.",
     },
     {
       name: "Present Day",
-      img: "/assets/img/carousel/placeholder3.jpg",
+      img: "/assets/img/carousel/future.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nesciunt aperiam reprehenderit quod. Est quia ad fuga quod debitis excepturi delectus sequi eum, libero corporis iure, velit quo eos. Ullam.",
+        "In the present day, I am living life to the fullest, enjoying the journey of software development and life as a university student, with an eagerness and cautious optimism for what the future has in store, and opportunities it holds.",
     },
   ];
 
   return (
-    <Carousel swipe>
+    <Carousel swipe interval={7500}>
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}
