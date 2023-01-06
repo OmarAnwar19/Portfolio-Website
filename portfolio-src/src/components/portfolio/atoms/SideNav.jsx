@@ -24,7 +24,7 @@ const SideNav = () => {
     >
       <ButtonGroup color="inherit" orientation="vertical" variant="text">
         {navItems.map((item) => (
-          <Button>
+          <Button key={item.name}>
             <Link href={`#${item.anchorId}`} scroll={true}>
               {item.name}
             </Link>

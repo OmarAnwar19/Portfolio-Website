@@ -87,12 +87,13 @@ const Projects = () => {
           My Work
         </Typography>
         <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          {projects.map((group) => (
-            <Grid container spacing={3}>
-              {group.map((project) =>
+          {projects.map((group, i) => (
+            <Grid key={`group-${i}`} container spacing={3}>
+              {group.map((project, i) =>
                 project.main ? (
                   <Grid
                     item
+                    key={`project-${i}`}
                     xs={project.large ? (isMobile ? 12 : 6) : isMobile ? 12 : 3}
                   >
                     <ProjectCard
@@ -105,6 +106,7 @@ const Projects = () => {
                 ) : (
                   <Grid
                     item
+                    key={`project-${i}`}
                     xs={3}
                     sx={{ display: { sm: "block", xs: "none" } }}
                   >

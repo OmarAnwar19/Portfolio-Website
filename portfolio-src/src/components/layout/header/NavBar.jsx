@@ -24,7 +24,7 @@ import DrawerCont from "./DrawerCont";
 const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const navItems = [
-    { slug: "Porfolio", path: "/", disabled: false },
+    { slug: "Porftolio", path: "/", disabled: false },
     { slug: "Blog", path: "/blog", disabled: true },
     { slug: "Resume", path: "/resume", disabled: false },
   ];

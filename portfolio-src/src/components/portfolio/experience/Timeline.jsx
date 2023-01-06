@@ -70,8 +70,9 @@ export default function OppositeContentTimeline() {
         },
       }}
     >
-      {items.map((item) => (
+      {items.map((item, i) => (
         <TLineItem
+          key={`item-${i}`}
           time={item.time}
           title={item.title}
           subtitle={item.subtitle}
