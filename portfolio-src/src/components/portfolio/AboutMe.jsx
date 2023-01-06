@@ -77,7 +77,7 @@ const AboutMe = () => {
                 direction="row"
               >
                 {skills.map((group) => (
-                  <List sx={{ listStyleType: "disc", pl: { sm: 4 } }}>
+                  <List sx={{ listStyleType: "disc", pl: { sm: 4, xs: 1 } }}>
                     {group.map((skill, i) => (
                       <ListItem key={skill} sx={{ display: "list-item" }}>
                         {skill}
