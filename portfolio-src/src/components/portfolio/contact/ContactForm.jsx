@@ -95,8 +95,12 @@ const ContactForm = () => {
       <Button
         type="submit"
         variant="contained"
-        color="white"
-        sx={{ width: "100%", m: 1 }}
+        sx={{
+          background: "white",
+          color: "black.main",
+          width: "100%",
+          m: 1,
+        }}
       >
         Send
       </Button>
