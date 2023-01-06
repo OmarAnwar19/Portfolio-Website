@@ -5,7 +5,7 @@ import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 //mui imports
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, TextField, useTheme } from "@mui/material";
 
 //component imports
 import Toast from "./Toast";
@@ -13,6 +13,7 @@ import Toast from "./Toast";
 const ContactForm = () => {
   const [open, setOpen] = useState(false);
   const form = useRef();
+  const theme = useTheme();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -94,7 +95,7 @@ const ContactForm = () => {
       <Button
         type="submit"
         variant="contained"
-        color="white"
+        color="secondary"
         sx={{ width: "100%", m: 1 }}
       >
         Send

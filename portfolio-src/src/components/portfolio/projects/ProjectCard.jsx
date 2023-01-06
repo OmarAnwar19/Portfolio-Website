@@ -80,7 +80,6 @@ const ProjectCard = ({ title, desc, img, link }) => {
             GitHub
           </Button>
         </Link>
-        {}
       </CardActions>
     </Card>
   );
