@@ -95,7 +95,7 @@ const ContactForm = () => {
       <Button
         type="submit"
         variant="contained"
-        color="secondary"
+        color="white"
         sx={{
           width: "100%",
           m: 1,
