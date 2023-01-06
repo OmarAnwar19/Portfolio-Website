@@ -11,7 +11,6 @@ import Experience from "../src/components/portfolio/experience/Experience";
 import Projects from "../src/components/portfolio/projects/Projects";
 import Contact from "../src/components/portfolio/contact/Contact";
 import SideNav from "../src/components/portfolio/atoms/SideNav";
-import { useRef } from "react";
 
 const Home = () => {
   return (
