@@ -48,7 +48,7 @@ const ProjectCard = ({ title, desc, img, link }) => {
         sx={{
           color: "#fff",
           height: "100%",
-          backgroundColor: "rgba(0,0,0, 0.2)",
+          backgroundColor: "rgba(0,0,0, 0.5)",
           position: "relative",
         }}
       >
@@ -67,7 +67,7 @@ const ProjectCard = ({ title, desc, img, link }) => {
       <CardActions
         sx={{
           position: "relative",
-          backgroundColor: "rgba(0,0,0, 0.2)",
+          backgroundColor: "rgba(0,0,0, 0.5)",
         }}
       >
         <Link href={link}>

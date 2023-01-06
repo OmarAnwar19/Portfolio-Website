@@ -22,6 +22,7 @@ const Contact = () => {
           color: "white.main",
           bgcolor: "primary.main",
           p: 5,
+          height: { xs: "75%", sm: "auto" },
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -60,8 +61,9 @@ const Contact = () => {
 
             <Box>
               <Typography>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                ipsum asperiores repellat itaque!
+                Looking to work with me, or discuss an idea or concept? Looking
+                for some help with your project? Or just looking to talk? I'd
+                love to get in touch whatever it is!
               </Typography>
 
               <Link href="mailto:omaranwar04@outlook.com">

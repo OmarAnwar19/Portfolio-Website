@@ -41,7 +41,7 @@ function ScrollTop({ children, window }) {
 const BackToTop = () => {
   return (
     <ScrollTop>
-      <Fab size="small" aria-label="scroll back to top">
+      <Fab size="small" color="secondary">
         <KeyboardArrowUp />
       </Fab>
     </ScrollTop>

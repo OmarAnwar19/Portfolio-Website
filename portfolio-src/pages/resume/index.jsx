@@ -26,7 +26,7 @@ const Resume = () => {
         <iframe
           width="100%"
           src="https://docs.google.com/document/d/e/2PACX-1vSKsabRnzPoWngoL73k_Ca01pDCZ7rtM8P9Y-0kh_l_WzD4F8jMnj41sBxmfAx9mq8jZ28UljcgQ17J/pub?embedded=true"
-        ></iframe>
+        />
       </Box>
     </Box>
   );

@@ -41,8 +41,8 @@ const Hero = () => {
               display: { sm: "block", xs: "none" },
             }}
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
-            explicabo veniam laboriosam repudiandae tempore et quasi!
+            Highly motivated, software enginner, developer, and TPM adept in
+            front-end and full-stack development using a varied tech stack.
           </Typography>
 
           <Box maxWidth={250}>

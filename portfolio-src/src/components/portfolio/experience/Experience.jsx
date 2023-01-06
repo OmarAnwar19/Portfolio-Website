@@ -41,6 +41,7 @@ const Experience = () => {
               justifyContent: "center",
               width: "45%",
               height: "100%",
+              my: 1,
             }}
           >
             <CarouselCont />

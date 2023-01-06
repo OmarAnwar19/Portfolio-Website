@@ -25,44 +25,43 @@ const Projects = () => {
     [
       {
         main: true,
-        title: "Project",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in, eius vero nisi magnam quis quaerat?",
-        img: "/assets/img/cards/techplace.jpg",
-        link: "https://github.com/OmarAnwar19",
+        title: "Chloe AI Virtual Assistant",
+        desc: " Chloe is an AI Virtual Assistant, which harnesses the power of AI and Machine Learning in order to help you with anything you need! ",
+        img: "/assets/img/cards/chloe.png",
+        link: "https://github.com/OmarAnwar19/Chloe-AI-Virtual-Assistant",
       },
       {
-        title: "Project",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        img: "/assets/img/cards/techplace.jpg",
-        link: "https://github.com/OmarAnwar19",
+        title: "Facebook Clone",
+        desc: "A clone of the facebook web app UI.",
+        img: "/assets/img/cards/facebook.png",
+        link: "https://github.com/OmarAnwar19/Facebook-Clone",
       },
       {
-        title: "Project",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        img: "/assets/img/cards/techplace.jpg",
-        link: "https://github.com/OmarAnwar19",
+        title: "NFT Generator",
+        desc: "Generate random NFT's using Python!",
+        img: "/assets/img/cards/nftgen.png",
+        link: "https://github.com/OmarAnwar19/NFT-Generator",
       },
     ],
     [
       {
-        title: "Project",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        img: "/assets/img/cards/techplace.jpg",
-        link: "https://github.com/OmarAnwar19",
+        title: "A* Visualizer",
+        desc: "Visualizer for an A* Path Finding algorithim.",
+        img: "/assets/img/cards/astar.png",
+        link: "https://github.com/OmarAnwar19/A-Star-Path-Finding-Algorithim-Visualizer",
       },
       {
-        title: "Project",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        img: "/assets/img/cards/techplace.jpg",
-        link: "https://github.com/OmarAnwar19",
+        title: "19tracks",
+        desc: "My personal music blog, created using Ruby and Jekyll.",
+        img: "/assets/img/cards/19tracks.png",
+        link: "https://github.com/OmarAnwar19/19tracks",
       },
       {
         main: true,
-        title: "Project",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in, eius vero nisi magnam quis quaerat?",
-        img: "/assets/img/cards/techplace.jpg",
-        link: "https://github.com/OmarAnwar19",
-        techArr: [<Javascript />],
+        title: "Nine Worlds Chat",
+        desc: "Socket.io based chat app, which connects users with auth, and allows them to join different chat rooms, for real time communication with others. ",
+        img: "/assets/img/cards/nineworlds.png",
+        link: "https://github.com/OmarAnwar19/Chat-App-With-User-Authentication",
       },
     ],
   ];
@@ -120,6 +119,7 @@ const Projects = () => {
           sx={{
             display: { sm: "none", xs: "block" },
             mt: 3,
+            color: "black.main",
           }}
           startIcon={<OpenInNewOutlined />}
           size="small"

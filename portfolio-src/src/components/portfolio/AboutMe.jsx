@@ -19,14 +19,14 @@ import ScrollBottom from "../atoms/ScrollBottom";
 
 const AboutMe = () => {
   const skills = [
-    ["Skill", "Skill", "Skill"],
-    ["Skill", "Skill", "Skill"],
-    ["Skill", "Skill", "Skill"],
+    ["HTML/CSS", "ReactJs", "NodeJs"],
+    ["GraphQL", "MongoDB", "SQL"],
+    ["Java", "Python", "C++"],
   ];
 
   return (
     <Paper
-      sx={{ height: "100%", width: "100%", bgcolor: "primary.main", py: 2 }}
+      sx={{ height: "100%", width: "100%", bgcolor: "primary.main", pb: 2 }}
     >
       <Section secId={"about-me"}>
         <Card
@@ -53,10 +53,12 @@ const AboutMe = () => {
               About Me
             </Typography>
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit
-              animi odio fugit asperiores in, nemo possimus officia commodi
-              quia! At dolorum expedita accusamus? Vitae voluptatibus maiores
-              delectus ea nobis!
+              Welcome to my site! I'm a student and software devloper living in
+              Ottawa, Canada; with experience in full-stack development, aswell
+              as Java, Python, and many varied technologies. I also love to
+              learn, and am always open to discovering something new. In my
+              personal life I am a huge music nerd, and love to spend time in
+              nature with family and friends.
             </Typography>
 
             <Box>
@@ -79,14 +81,14 @@ const AboutMe = () => {
                   <List sx={{ listStyleType: "disc", pl: 4 }}>
                     {group.map((skill, i) => (
                       <ListItem key={skill} sx={{ display: "list-item" }}>
-                        {`${skill} ${i + 1}`}
+                        {skill}
                       </ListItem>
                     ))}
                   </List>
                 ))}
               </Stack>
               <Typography sx={{ fontStyle: "italic" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                +many more... Thank you for spending some time with me today!
               </Typography>
             </Box>
           </CardContent>

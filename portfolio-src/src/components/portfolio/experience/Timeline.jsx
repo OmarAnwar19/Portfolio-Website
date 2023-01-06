@@ -9,7 +9,14 @@ import TimelineOppositeContent, {
 } from "@mui/lab/TimelineOppositeContent";
 
 //icon imports
-import { LaptopMac } from "@mui/icons-material";
+import {
+  Api,
+  Cake,
+  Code,
+  DirectionsRun,
+  FlightTakeoff,
+  LaptopMac,
+} from "@mui/icons-material";
 
 //component imports
 import TLineItem from "./TLineItem";
@@ -17,34 +24,40 @@ import TLineItem from "./TLineItem";
 export default function OppositeContentTimeline() {
   const items = [
     {
-      time: "2004",
-      title: "Code",
-      subtitle: "Lorem ipsum dolor sit amet.",
+      time: "Fall 2022",
+      title: "Pilot",
+      subtitle: "Front-end Engineer Intern",
+      icon: <FlightTakeoff />,
+    },
+    {
+      time: "Summer 2022",
+      title: "GAOTek Inc.",
+      subtitle: "Sofware Development Intern",
+      icon: <Api />,
+    },
+    {
+      time: "2022 - Present",
+      title: "Inertia (startup)",
+      subtitle: "Co-Founder, Developer and TPM",
+      icon: <DirectionsRun />,
+    },
+    {
+      time: "Winter 2022",
+      title: "Digitera Interactive",
+      subtitle: "Full-Stack Development Intern",
       icon: <LaptopMac />,
     },
     {
-      time: "2004",
-      title: "Code",
-      subtitle: "Lorem ipsum dolor sit amet.",
-      icon: <LaptopMac />,
+      time: "2020-22",
+      title: "Freelance",
+      subtitle: "Freelance Web Developer",
+      icon: <Code />,
     },
     {
-      time: "2004",
-      title: "Code",
-      subtitle: "Lorem ipsum dolor sit amet.",
-      icon: <LaptopMac />,
-    },
-    {
-      time: "2004",
-      title: "Code",
-      subtitle: "Lorem ipsum dolor sit amet.",
-      icon: <LaptopMac />,
-    },
-    {
-      time: "2004",
-      title: "Code",
-      subtitle: "Lorem ipsum dolor sit amet.",
-      icon: <LaptopMac />,
+      time: "2018-20",
+      title: "Sweet Me",
+      subtitle: "Full Stack Developer, Digital PM",
+      icon: <Cake />,
     },
   ];
 
