@@ -36,6 +36,7 @@ const AboutMe = () => {
             borderRadius: 2,
             height: "85%",
             mx: "auto",
+            maxWidth: "100%",
           }}
         >
           <CardContent
@@ -56,9 +57,7 @@ const AboutMe = () => {
               Welcome to my site! I'm a Computer Science student and software
               developer; with experience in full-stack development, aswell as
               Java, Python, and many varied technologies. I also love to learn,
-              and am always open to discovering something new. In my personal
-              life I am a huge music nerd, and love to spend time in nature with
-              family and friends.
+              and am always open to discovering something new.
             </Typography>
 
             <Box>
@@ -78,7 +77,7 @@ const AboutMe = () => {
                 direction="row"
               >
                 {skills.map((group) => (
-                  <List sx={{ listStyleType: "disc", pl: 4 }}>
+                  <List sx={{ listStyleType: "disc", pl: { sm: 4 } }}>
                     {group.map((skill, i) => (
                       <ListItem key={skill} sx={{ display: "list-item" }}>
                         {skill}

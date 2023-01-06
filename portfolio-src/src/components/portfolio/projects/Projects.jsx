@@ -25,12 +25,14 @@ const Projects = () => {
     [
       {
         main: true,
+        large: true,
         title: "Chloe AI Virtual Assistant",
-        desc: " Chloe is an AI Virtual Assistant, which harnesses the power of AI and Machine Learning in order to help you with anything you need! ",
+        desc: " Chloe is an AI Virtual Assistant, which harnesses the power of AI and Machine Learning in order to help you with all you need! ",
         img: "/assets/img/cards/chloe.png",
         link: "https://github.com/OmarAnwar19/Chloe-AI-Virtual-Assistant",
       },
       {
+        main: true,
         title: "Facebook Clone",
         desc: "A clone of the facebook web app UI.",
         img: "/assets/img/cards/facebook.png",
@@ -58,6 +60,7 @@ const Projects = () => {
       },
       {
         main: true,
+        large: true,
         title: "Nine Worlds Chat",
         desc: "Socket.io based chat app, which connects users with auth, and allows them to join different chat rooms, for real time communication with others. ",
         img: "/assets/img/cards/nineworlds.png",
@@ -88,7 +91,10 @@ const Projects = () => {
             <Grid container spacing={3}>
               {group.map((project) =>
                 project.main ? (
-                  <Grid item xs={isMobile ? 12 : 6}>
+                  <Grid
+                    item
+                    xs={project.large ? (isMobile ? 12 : 6) : isMobile ? 12 : 3}
+                  >
                     <ProjectCard
                       title={project.title}
                       desc={project.desc}

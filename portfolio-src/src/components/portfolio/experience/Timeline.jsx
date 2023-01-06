@@ -64,7 +64,7 @@ export default function OppositeContentTimeline() {
   return (
     <Timeline
       sx={{
-        maxHeight: "100%",
+        maxHeight: "90%",
         [`& .${timelineOppositeContentClasses.root}`]: {
           flex: { sm: 0.2, xs: 0.5 },
         },
