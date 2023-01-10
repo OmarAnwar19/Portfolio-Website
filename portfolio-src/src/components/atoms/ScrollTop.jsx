@@ -40,11 +40,13 @@ function ScrollTop({ children, window }) {
 
 const BackToTop = () => {
   return (
-    <ScrollTop>
-      <Fab size="small" color="secondary">
-        <KeyboardArrowUp />
-      </Fab>
-    </ScrollTop>
+    <Box sx={{ display: { sm: "block", xs: "none" } }}>
+      <ScrollTop>
+        <Fab size="small" color="secondary">
+          <KeyboardArrowUp />
+        </Fab>
+      </ScrollTop>
+    </Box>
   );
 };
 

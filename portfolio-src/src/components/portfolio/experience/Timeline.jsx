@@ -42,7 +42,7 @@ export default function OppositeContentTimeline() {
       icon: <DirectionsRun />,
     },
     {
-      time: "Winter 2022",
+      time: "Winter 2021",
       title: "Digitera Interactive",
       subtitle: "Full-Stack Development Intern",
       icon: <LaptopMac />,

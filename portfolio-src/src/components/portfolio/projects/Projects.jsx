@@ -127,7 +127,6 @@ const Projects = () => {
           sx={{
             display: { sm: "none", xs: "block" },
             mt: 3,
-            color: "black.main",
           }}
           startIcon={<OpenInNewOutlined />}
           size="small"
