@@ -62,6 +62,10 @@ const MUIProvider = ({ children }) => {
               main: "#000",
               contrastText: "#fff",
             },
+            spotify: {
+              main: "#1DB954",
+              contrastText: "#fff",
+            },
           }
         : {
             primary: {
