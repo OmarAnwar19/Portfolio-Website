@@ -1,4 +1,5 @@
-_**NOTE:**__This is the old version of my portfolio, the new one can be found [here](https://github.com/OmarAnwar19/Portfolio-Website-V2)
+
+_**Note: **_ This is the old version of my portfolio, the new one can be found [here](https://github.com/OmarAnwar19/Portfolio-Website-V2)
 
 ---
 
