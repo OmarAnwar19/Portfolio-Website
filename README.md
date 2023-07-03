@@ -1,3 +1,7 @@
+_**NOTE:**__This is the old version of my portfolio, the new one can be found [here](https://github.com/OmarAnwar19/Portfolio-Website-V2)
+
+---
+
 # Personal Porfolio
 
 All of the code and files for my personal portfolio. The root includes two folders, the desgin, with a quick mock-up of a potential website desgin created prior to the actual development process, aswell as the actual portfolio source code.
